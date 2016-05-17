@@ -5,16 +5,19 @@
   
   <title>POST/GET请求 | Coding-Shrimp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考链接：http://www.2cto.com/kf/201604/503440.html">
+  <meta name="description" content="代码使用NSURLSession来完成GET以下url是无效链接
+1234567891011121314151617181920212223//请求路径   NSURL *url = [NSURL URLWithString:@&amp;quot;http://api.avatardata.cn/QiWenNews/Query?key=090a2de566974ac089750bd4483bcd6&amp;amp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="POST/GET请求">
 <meta property="og:url" content="http://cshrimp.cc/2016/05/12/网络请求POST:GET/index.html">
 <meta property="og:site_name" content="Coding-Shrimp">
-<meta property="og:description" content="参考链接：http://www.2cto.com/kf/201604/503440.html">
-<meta property="og:updated_time" content="2016-05-12T08:34:04.000Z">
+<meta property="og:description" content="代码使用NSURLSession来完成GET以下url是无效链接
+1234567891011121314151617181920212223//请求路径   NSURL *url = [NSURL URLWithString:@&amp;quot;http://api.avatardata.cn/QiWenNews/Query?key=090a2de566974ac089750bd4483bcd6&amp;amp">
+<meta property="og:updated_time" content="2016-05-17T07:32:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="POST/GET请求">
-<meta name="twitter:description" content="参考链接：http://www.2cto.com/kf/201604/503440.html">
+<meta name="twitter:description" content="代码使用NSURLSession来完成GET以下url是无效链接
+1234567891011121314151617181920212223//请求路径   NSURL *url = [NSURL URLWithString:@&amp;quot;http://api.avatardata.cn/QiWenNews/Query?key=090a2de566974ac089750bd4483bcd6&amp;amp">
   
     <link rel="alternative" href="/atom.xml" title="Coding-Shrimp" type="application/atom+xml">
   
@@ -166,7 +169,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Actraz/">Actraz</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo收藏/">Hexo收藏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Touch-ID/">Touch_ID</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS填坑中/">iOS填坑中</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS收藏/">iOS收藏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS问题/">iOS问题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/新篇/">新篇</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/百度地图/">百度地图</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Actraz/">Actraz</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/">Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Touch-ID/">Touch_ID</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo优化/">hexo优化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS填坑中/">iOS填坑中</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS收藏/">iOS收藏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS问题/">iOS问题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/新篇/">新篇</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/百度地图/">百度地图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/记录/">记录</a></li></ul>
                     </div>
                 </section>
                 
@@ -287,15 +290,16 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>参考链接：<a href="http://www.2cto.com/kf/201604/503440.html" target="_blank" rel="external">http://www.2cto.com/kf/201604/503440.html</a></p>
+        <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="使用NSURLSession来完成GET"><a href="#使用NSURLSession来完成GET" class="headerlink" title="使用NSURLSession来完成GET"></a>使用NSURLSession来完成GET</h3><p><code>以下url是无效链接</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//请求路径</span><br><span class="line">   NSURL *url = [NSURL URLWithString:@&quot;http://api.avatardata.cn/QiWenNews/Query?key=090a2de566974ac089750bd4483bcd6&amp;page=1&amp;rows=10&quot;];</span><br><span class="line">   //创建请求对象</span><br><span class="line">   //请求对象内部默认已经包含了请求头和请求方法（GET）</span><br><span class="line">   NSURLRequest *request = [NSURLRequest requestWithURL:url];</span><br><span class="line">   //创建会话对象</span><br><span class="line">   NSURLSession *session = [NSURLSession sharedSession];</span><br><span class="line">   //根据会话对象创建一个Task</span><br><span class="line">   /*</span><br><span class="line">    第一个参数：请求对象</span><br><span class="line">    第二个参数：completionHandler回调（请求完成【成功|失败】的回调）</span><br><span class="line">    data：响应体信息（期望的数据）</span><br><span class="line">    response：响应头信息，主要是对服务器端的描述</span><br><span class="line">    error：错误信息，如果请求失败，则error有值</span><br><span class="line">    */</span><br><span class="line">    //如果使用dataTaskWithURL这个方法可以不用请求对象</span><br><span class="line">   NSURLSessionDataTask *datatask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) &#123;</span><br><span class="line">       //</span><br><span class="line">       id dat = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];</span><br><span class="line">       NSLog(@&quot;json:%@&quot;,dat);</span><br><span class="line">   &#125;];</span><br><span class="line">   //执行任务</span><br><span class="line">   [datatask resume];</span><br></pre></td></tr></table></figure>
 <ul>
 <li><a id="more"></a>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="使用NSURLSession来完成GET"><a href="#使用NSURLSession来完成GET" class="headerlink" title="使用NSURLSession来完成GET"></a>使用NSURLSession来完成GET</h3><code>以下url是无效链接</code></li>
+<h3 id="使用NSURLSession来完成POST"><a href="#使用NSURLSession来完成POST" class="headerlink" title="使用NSURLSession来完成POST"></a>使用NSURLSession来完成POST</h3></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//请求路径</span><br><span class="line">   NSURL *url = [NSURL URLWithString:@&quot;http://api.avatardata.cn/QiWenNews/Query?key=090a2de566974ac089750bd4483bcd6&amp;page=1&amp;rows=10&quot;];</span><br><span class="line">   //创建请求对象</span><br><span class="line">   //请求对象内部默认已经包含了请求头和请求方法（GET）</span><br><span class="line">   NSURLRequest *request = [NSURLRequest requestWithURL:url];</span><br><span class="line">   //创建会话对象</span><br><span class="line">   NSURLSession *session = [NSURLSession sharedSession];</span><br><span class="line">   //根据会话对象创建一个Task</span><br><span class="line">   /*</span><br><span class="line">    第一个参数：请求对象</span><br><span class="line">    第二个参数：completionHandler回调（请求完成【成功|失败】的回调）</span><br><span class="line">    data：响应体信息（期望的数据）</span><br><span class="line">    response：响应头信息，主要是对服务器端的描述</span><br><span class="line">    error：错误信息，如果请求失败，则error有值</span><br><span class="line">    */</span><br><span class="line">    //如果使用dataTaskWithURL这个方法可以不用请求对象</span><br><span class="line">   NSURLSessionDataTask *datatask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) &#123;</span><br><span class="line">       //</span><br><span class="line">       id dat = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];</span><br><span class="line">       NSLog(@&quot;json:%@&quot;,dat);</span><br><span class="line">   &#125;];</span><br><span class="line">   //执行任务</span><br><span class="line">   [datatask resume];</span><br></pre></td></tr></table></figure>
-<h3 id="使用NSURLSession来完成POST"><a href="#使用NSURLSession来完成POST" class="headerlink" title="使用NSURLSession来完成POST"></a>使用NSURLSession来完成POST</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//创建请求对象</span><br><span class="line">   NSURLSession *session = [NSURLSession sharedSession];</span><br><span class="line">   //请求路径</span><br><span class="line">   NSURL *url = [NSURL URLWithString:@&quot;http://api.avatardata.cn/QiWenNews/Query&quot;];</span><br><span class="line">   //创建可变的请求对象</span><br><span class="line">   NSMutableURLRequest *urlrequest = [NSMutableURLRequest requestWithURL:url];</span><br><span class="line">   //修改请求方法为post</span><br><span class="line">   urlrequest.HTTPMethod = @&quot;POST&quot;;</span><br><span class="line">   //设置请求体</span><br><span class="line">   urlrequest.HTTPBody = [@&quot;key=090a2de56674ac089750bdc4483bd6&amp;page=1&amp;rows=10&quot; dataUsingEncoding:NSUTF8StringEncoding];</span><br><span class="line">   //根据会话对象创建一个Task</span><br><span class="line">   NSURLSessionDataTask *datatask = [session dataTaskWithRequest:urlrequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) &#123;</span><br><span class="line">       //</span><br><span class="line">       id dat = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];</span><br><span class="line">       NSLog(@&quot;json:%@&quot;,dat);</span><br><span class="line">   &#125;];</span><br><span class="line">   //执行任务</span><br><span class="line">   [datatask resume];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//创建请求对象</span><br><span class="line">   NSURLSession *session = [NSURLSession sharedSession];</span><br><span class="line">   //请求路径</span><br><span class="line">   NSURL *url = [NSURL URLWithString:@&quot;http://api.avatardata.cn/QiWenNews/Query&quot;];</span><br><span class="line">   //创建可变的请求对象</span><br><span class="line">   NSMutableURLRequest *urlrequest = [NSMutableURLRequest requestWithURL:url];</span><br><span class="line">   //修改请求方法为post</span><br><span class="line">   urlrequest.HTTPMethod = @&quot;POST&quot;;</span><br><span class="line">   //设置请求体</span><br><span class="line">   urlrequest.HTTPBody = [@&quot;key=090a2de56674ac089750bdc4483bd6&amp;page=1&amp;rows=10&quot; dataUsingEncoding:NSUTF8StringEncoding];</span><br><span class="line">   //根据会话对象创建一个Task</span><br><span class="line">   NSURLSessionDataTask *datatask = [session dataTaskWithRequest:urlrequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) &#123;</span><br><span class="line">       //</span><br><span class="line">       id dat = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];</span><br><span class="line">       NSLog(@&quot;json:%@&quot;,dat);</span><br><span class="line">   &#125;];</span><br><span class="line">   //执行任务</span><br><span class="line">   [datatask resume];</span><br></pre></td></tr></table></figure>
 <h3 id="AFNetworking的POST请求"><a href="#AFNetworking的POST请求" class="headerlink" title="AFNetworking的POST请求"></a>AFNetworking的POST请求</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">导入相应的头文件：</span><br><span class="line">	#import &lt;AFNetworking.h&gt;</span><br><span class="line">	#import &lt;AFHTTPSessionManager.h&gt;</span><br><span class="line">	</span><br><span class="line">    //创建会话对象</span><br><span class="line">    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];</span><br><span class="line">    //申明返回的结果是json类型</span><br><span class="line">    manager.responseSerializer = [AFJSONResponseSerializer serializer];</span><br><span class="line">    //传入的参数</span><br><span class="line">    NSDictionary *parameters = @&#123;@&quot;key&quot;:@&quot;090a2de566974c089750bdc4483bcd6&quot;,@&quot;row&quot;:@10,@&quot;page&quot;:@1&#125;;</span><br><span class="line">    NSString *url = @&quot;http://api.avatardata.cn/QiWenNews/Query&quot;;</span><br><span class="line">    //设置网络指示器</span><br><span class="line">    [[UIApplication sharedApplication]setNetworkActivityIndicatorVisible:YES];</span><br><span class="line">    //POST</span><br><span class="line">    [manager POST:url parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) &#123;</span><br><span class="line">        //</span><br><span class="line">    &#125; success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) &#123;</span><br><span class="line">        //</span><br><span class="line">        NSLog(@&quot;json:%@&quot;,responseObject);</span><br><span class="line">        //设置网络指示器</span><br><span class="line">        [[UIApplication sharedApplication]setNetworkActivityIndicatorVisible:NO];</span><br><span class="line">    &#125; failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) &#123;</span><br><span class="line">        //</span><br><span class="line">        NSLog(@&quot;error:%@&quot;,error);</span><br><span class="line">    &#125;];</span><br></pre></td></tr></table></figure>
 <p>//GET大同小异</p>
+<p>参考链接：<a href="http://www.2cto.com/kf/201604/503440.html" target="_blank" rel="external">http://www.2cto.com/kf/201604/503440.html</a></p>
 
       
     </div>
@@ -307,7 +311,7 @@
         <p><span>本文标题:</span><a href="/2016/05/12/网络请求POST:GET/">POST/GET请求</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Coding-Shrimp</a></p>
         <p><span>发布时间:</span>2016-05-12, 14:58:21</p>
-        <p><span>最后更新:</span>2016-05-12, 16:34:04</p>
+        <p><span>最后更新:</span>2016-05-17, 15:32:23</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/05/12/网络请求POST:GET/" title="POST/GET请求">http://cshrimp.cc/2016/05/12/网络请求POST:GET/</a>
             <span class="copy-path" data-clipboard-text="原文: http://cshrimp.cc/2016/05/12/网络请求POST:GET/　　作者: Coding-Shrimp" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -322,10 +326,16 @@
 
     <nav id="article-nav">
         
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/05/17/hexo Simple optimization/">
+                    hexo简单优化
+                </a>
+            </div>
+        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/11/Hexo添加最近访客DIV/">
-                    给自己的Hexo博客末尾添加一个最近访客
+                <a href="/2016/05/10/Actraz/">
+                    使用Acatraz管理插件
                 </a>
             </div>
         
@@ -408,11 +418,14 @@
 
     
       <div class="duoshuo" id="comments">
-    >最近访问
+    <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
+    最近访问
     <div class="ds-recent-visitors" data-num-items="28" data-avatar-size="42" id="ds-recent-visitors"></div>
+
     <!-- 多说评论框 start -->
     <div class="ds-thread" data-thread-key="2016/05/12/网络请求POST:GET/" data-title="POST/GET请求" data-url="http://cshrimp.cc/2016/05/12/网络请求POST:GET/"></div>
     <!-- 多说评论框 end -->
+
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
     var duoshuoQuery = {short_name:"coding-shrimp"};
@@ -436,19 +449,21 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/05/17/hexo Simple optimization/" title="上一篇: hexo简单优化">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/11/Hexo添加最近访客DIV/" title="下一篇: 给自己的Hexo博客末尾添加一个最近访客">
+            <a href="/2016/05/10/Actraz/" title="下一篇: 使用Acatraz管理插件">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/12/网络请求POST:GET/">POST/GET请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/11/Hexo添加最近访客DIV/">给自己的Hexo博客末尾添加一个最近访客</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/10/Actraz/">使用Acatraz管理插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/05/iOS百度地图遇到的问题/">iOS百度地图遇到的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/04/Touch-ID收藏/">Touch_ID</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/29/文字渐变效果/">文字渐变</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/28/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/17/hexo Simple optimization/">hexo简单优化</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/12/网络请求POST:GET/">POST/GET请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/10/Actraz/">使用Acatraz管理插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/05/iOS百度地图遇到的问题/">iOS百度地图遇到的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/04/Touch-ID收藏/">Touch_ID</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/29/文字渐变效果/">文字渐变</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/28/hello-world/">Hello World</a></li></ul>
 
 
 
@@ -491,8 +506,11 @@
         
     </div>
 </footer>
+
     </div>
     
+    <script src="/js/GithubRepoWidget.js"></script>
+
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
 
     <script>
