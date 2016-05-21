@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>博客创建于2016年4月28，记录日志，记录时间 | Coding-Shrimp</title>
+  <title>文字渐变 | Coding-Shrimp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="123&amp;gt;最近访问&amp;lt;div class=&amp;quot;ds-recent-visitors&amp;quot; data-num-items=&amp;quot;28&amp;quot; data-avatar-size=&amp;quot;42&amp;quot; id=&amp;quot;ds-recent-visitors&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;">
-<meta property="og:type" content="website">
-<meta property="og:title" content="博客创建于2016年4月28，记录日志，记录时间">
-<meta property="og:url" content="https://github.com/Coding-Shrimp/blog_source/about/index.html">
+  <meta name="description" content="思路1.创建一个颜色渐变层，渐变图层跟文字控件一样大。
+2.用文字图层裁剪渐变层，只保留文字部分，就会让渐变层只保留有文字的部分，相当于间接让渐变层显示文字，我们看到的其实是被裁剪过后，渐变层的部分内容。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文字渐变">
+<meta property="og:url" content="https://github.com/Coding-Shrimp/blog_source/2016/04/29/文字渐变效果/index.html">
 <meta property="og:site_name" content="Coding-Shrimp">
-<meta property="og:description" content="123&amp;gt;最近访问&amp;lt;div class=&amp;quot;ds-recent-visitors&amp;quot; data-num-items=&amp;quot;28&amp;quot; data-avatar-size=&amp;quot;42&amp;quot; id=&amp;quot;ds-recent-visitors&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;">
-<meta property="og:updated_time" content="2016-05-11T03:50:27.000Z">
+<meta property="og:description" content="思路1.创建一个颜色渐变层，渐变图层跟文字控件一样大。
+2.用文字图层裁剪渐变层，只保留文字部分，就会让渐变层只保留有文字的部分，相当于间接让渐变层显示文字，我们看到的其实是被裁剪过后，渐变层的部分内容。">
+<meta property="og:updated_time" content="2016-05-17T07:35:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客创建于2016年4月28，记录日志，记录时间">
-<meta name="twitter:description" content="123&amp;gt;最近访问&amp;lt;div class=&amp;quot;ds-recent-visitors&amp;quot; data-num-items=&amp;quot;28&amp;quot; data-avatar-size=&amp;quot;42&amp;quot; id=&amp;quot;ds-recent-visitors&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;">
+<meta name="twitter:title" content="文字渐变">
+<meta name="twitter:description" content="思路1.创建一个颜色渐变层，渐变图层跟文字控件一样大。
+2.用文字图层裁剪渐变层，只保留文字部分，就会让渐变层只保留有文字的部分，相当于间接让渐变层显示文字，我们看到的其实是被裁剪过后，渐变层的部分内容。">
   
     <link rel="alternative" href="/atom.xml" title="Coding-Shrimp" type="application/atom+xml">
   
@@ -44,7 +47,7 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -243,11 +246,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-文字渐变效果" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2016-04-28T07:12:19.000Z" itemprop="datePublished">2016-04-28</time>
+      <a href="/2016/04/29/文字渐变效果/" class="article-date">
+      <time datetime="2016-04-29T09:05:17.000Z" itemprop="datePublished">2016-04-29</time>
 </a>
     </div>
   
@@ -260,7 +263,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      博客创建于2016年4月28，记录日志，记录时间
+      文字渐变
     </h1>
   
 
@@ -268,8 +271,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS收藏/">iOS收藏</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -277,26 +288,22 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>1.创建一个颜色渐变层，渐变图层跟文字控件一样大。</p>
+<p>2.用文字图层裁剪渐变层，只保留文字部分，就会让渐变层只保留有文字的部分，相当于间接让渐变层显示文字，我们看到的其实是被裁剪过后，渐变层的部分内容。</p>
+<p><excerpt in="" index="" |="" 首页摘要=""> </excerpt></p>
+<ul>
+<li><a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
 
-
-          
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;最近访问</span><br><span class="line">&lt;div class=&quot;ds-recent-visitors&quot; data-num-items=&quot;28&quot; data-avatar-size=&quot;42&quot; </span><br><span class="line">id=&quot;ds-recent-visitors&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+</the></li>
+</ul>
+<p>注意：如果用文字图层裁剪渐变层，文字图层就不在拥有显示功能，这个图层就被弄来裁剪了，不会显示,在下面代码中也会有说明。</p>
+<p>2.1 创建一个带有文字的label，label能显示文字。</p>
+<p>2.2 设置渐变图层的mask为label图层，就能用文字裁剪渐变图层了。</p>
+<p>3.mask图层工作原理:<br>1.根据透明度进行裁剪，只保留非透明部分，显示底部内容</p>
+<hr>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">// 创建UILabel</span><br><span class="line">UILabel *label = [[YZLabel alloc] init];</span><br><span class="line"></span><br><span class="line">label.text = @<span class="string">"这段文字是用来渐变的"</span>;</span><br><span class="line"></span><br><span class="line">[label sizeToFit];</span><br><span class="line"></span><br><span class="line">label.center = self.view.center;</span><br><span class="line"></span><br><span class="line">// 疑问：label只是用来做文字裁剪，能否不添加到view上。</span><br><span class="line">// 必须要把Label添加到view上，如果不添加到view上，label的图层就不会调用drawRect方法绘制文字，也就没有文字裁剪了。</span><br><span class="line">// 如何验证，自定义Label,重写drawRect方法，看是否调用,发现不添加上去，就不会调用</span><br><span class="line">[self.view addSubview:label];</span><br><span class="line"></span><br><span class="line">// 创建渐变层</span><br><span class="line">CAGradientLayer *gradientLayer = [CAGradientLayer layer];</span><br><span class="line"></span><br><span class="line">gradientLayer.frame = label.frame;</span><br><span class="line"></span><br><span class="line">// 设置渐变层的颜色，随机颜色渐变</span><br><span class="line">gradientLayer.colors = @[(id)[self randomColor].CGColor, (id)[self randomColor].CGColor,(id)[self randomColor].CGColor];</span><br><span class="line"></span><br><span class="line">// 添加渐变层到控制器的view图层上</span><br><span class="line">[self.view.layer addSublayer:gradientLayer];</span><br><span class="line"></span><br><span class="line">// 设置渐变层的裁剪层</span><br><span class="line">gradientLayer.mask = label.layer;</span><br><span class="line"></span><br><span class="line">// 父层改了，坐标系也就改了，需要重新设置label的位置，才能正确的设置裁剪区域。</span><br><span class="line">label.frame = gradientLayer.bounds;</span><br><span class="line"></span><br><span class="line">// 利用定时器，快速的切换渐变颜色，就有文字颜色变化效果</span><br><span class="line">CADisplayLink *link = [CADisplayLink displayLinkWithTarget:self selector:@selector(textColorChange)];</span><br><span class="line"></span><br><span class="line">[link addToRunLoop:[NSRunLoop mainRunLoop] <span class="keyword">for</span>Mode:NSDefaultRunLoopMode];</span><br><span class="line"></span><br><span class="line">// 随机颜色方法</span><br><span class="line">-(UIColor *)randomColor&#123;</span><br><span class="line">CGFloat r = arc4random_uniform(256) / 255.0;</span><br><span class="line">CGFloat g = arc4random_uniform(256) / 255.0;</span><br><span class="line">CGFloat b = arc4random_uniform(256) / 255.0;</span><br><span class="line"><span class="built_in">return</span> [UIColor colorWithRed:r green:g blue:b alpha:1];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 定时器触发方法</span><br><span class="line">-(void)textColorChange &#123;</span><br><span class="line">_gradientLayer.colors = @[(id)[self randomColor].CGColor,</span><br><span class="line">(id)[self randomColor].CGColor,</span><br><span class="line">(id)[self randomColor].CGColor, </span><br><span class="line">(id)[self randomColor].CGColor,</span><br><span class="line">(id)[self randomColor].CGColor];   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>参考博客:<a href="http://www.jianshu.com/p/0c785ee7ef35" target="_blank" rel="external">文／峥吖</a><br>偶尔在博客上看到,这是一个文字渐变的效果,纪录下来也许以后会用到</p>
 
       
     </div>
@@ -304,10 +311,85 @@
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/04/29/文字渐变效果/">文字渐变</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Coding-Shrimp</a></p>
+        <p><span>发布时间:</span>2016-04-29, 17:05:17</p>
+        <p><span>最后更新:</span>2016-05-17, 15:35:00</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/04/29/文字渐变效果/" title="文字渐变">https://github.com/Coding-Shrimp/blog_source/2016/04/29/文字渐变效果/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://github.com/Coding-Shrimp/blog_source/2016/04/29/文字渐变效果/　　作者: Coding-Shrimp" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/05/04/Touch-ID收藏/">
+                    Touch_ID
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/04/28/hello-world/">
+                    Hello World
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#思路"><span class="toc-number">1.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-number">2.</span> <span class="toc-text">代码</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
 
 
 
@@ -325,7 +407,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"博客创建于2016年4月28，记录日志，记录时间　| Coding-Shrimp　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"文字渐变　| Coding-Shrimp　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -345,7 +427,7 @@
     <div class="ds-recent-visitors" data-num-items="28" data-avatar-size="42" id="ds-recent-visitors"></div>
 
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="about/index.html" data-title="博客创建于2016年4月28，记录日志，记录时间" data-url="https://github.com/Coding-Shrimp/blog_source/about/index.html"></div>
+    <div class="ds-thread" data-thread-key="2016/04/29/文字渐变效果/" data-title="文字渐变" data-url="https://github.com/Coding-Shrimp/blog_source/2016/04/29/文字渐变效果/"></div>
     <!-- 多说评论框 end -->
 
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
@@ -366,6 +448,26 @@
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/05/04/Touch-ID收藏/" title="上一篇: Touch_ID">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/04/28/hello-world/" title="下一篇: Hello World">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/blog/">cocoapods笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/Apple history/">Apple history</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/17/hexo Simple optimization/">hexo简单优化</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/12/网络请求POST:GET/">POST/GET请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/10/Actraz/">使用Acatraz管理插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/05/iOS百度地图遇到的问题/">iOS百度地图遇到的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/04/Touch-ID收藏/">Touch_ID</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/29/文字渐变效果/">文字渐变</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/28/hello-world/">Hello World</a></li></ul>
 
 
 
