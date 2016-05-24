@@ -3,20 +3,44 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | Coding-Shrimp</title>
+  <title>about | CGSP’s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="博客创建于2016-4-28">
+  <meta name="description" content="博客于2016/4/28开始运行
+
+function yizhidong(){
+    setInterval(&quot;leijia()&quot;,1000);
+}
+function leijia(){
+    var date1=new Date(&quot;2016/4/28 22:19:35&quot;);  //开始时间
+    var date2=new Date();    //结束时间
+    var date3=d">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://cshrimp.cc/about/index.html">
-<meta property="og:site_name" content="Coding-Shrimp">
-<meta property="og:description" content="博客创建于2016-4-28">
-<meta property="og:updated_time" content="2016-05-23T01:38:46.000Z">
+<meta property="og:site_name" content="CGSP’s blog">
+<meta property="og:description" content="博客于2016/4/28开始运行
+
+function yizhidong(){
+    setInterval(&quot;leijia()&quot;,1000);
+}
+function leijia(){
+    var date1=new Date(&quot;2016/4/28 22:19:35&quot;);  //开始时间
+    var date2=new Date();    //结束时间
+    var date3=d">
+<meta property="og:updated_time" content="2016-05-24T07:03:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
-<meta name="twitter:description" content="博客创建于2016-4-28">
+<meta name="twitter:description" content="博客于2016/4/28开始运行
+
+function yizhidong(){
+    setInterval(&quot;leijia()&quot;,1000);
+}
+function leijia(){
+    var date1=new Date(&quot;2016/4/28 22:19:35&quot;);  //开始时间
+    var date2=new Date();    //结束时间
+    var date3=d">
   
-    <link rel="alternative" href="/atom.xml" title="Coding-Shrimp" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="CGSP’s blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/img/avataricon.png">
@@ -87,11 +111,13 @@
         </hgroup>
 
         
-        <p class="header-subtitle">一切以快乐为基础,在iOS的填坑的路上</p>
+        <p class="header-subtitle">垫量自己的是与否，三思而后行.iOS的填坑的路上</p>
         
 
         
-
+    <form action="/myme.html">
+    <input type="submit" />
+    </form>
         
             <div id="switch-btn" class="switch-btn">
                 <div class="icon">
@@ -179,7 +205,9 @@
                     
                       <a target="_blank" class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.hangge.com/">hange</a>
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.hangge.com/">hanGge</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://stackoverflow.com/">stackoverflow</a>
                     
                     </div>
                 </section>
@@ -212,7 +240,7 @@
               <h1 class="header-author"><a href="/" title="回到主页">Coding-Shrimp</a></h1>
             </hgroup>
             
-            <p class="header-subtitle">一切以快乐为基础,在iOS的填坑的路上</p>
+            <p class="header-subtitle">垫量自己的是与否，三思而后行.iOS的填坑的路上</p>
             
             <nav class="header-menu">
                 <ul>
@@ -300,7 +328,39 @@ text-align: center;
 
 
           
-        <p>博客创建于2016-4-28</p>
+        <p>博客于2016/4/28开始运行</p>
+<script language="JavaScript">
+function yizhidong(){
+    setInterval("leijia()",1000);
+}
+function leijia(){
+    var date1=new Date("2016/4/28 22:19:35");  //开始时间
+    var date2=new Date();    //结束时间
+    var date3=date2.getTime()-date1.getTime()  //时间差的毫秒数
+
+//计算出相差天数
+var days=Math.floor(date3/(24*3600*1000))
+
+//计算出小时数
+
+var leave1=date3%(24*3600*1000)    //计算天数后剩余的毫秒数
+var hours=Math.floor(leave1/(3600*1000))
+//计算相差分钟数
+var leave2=leave1%(3600*1000)        //计算小时数后剩余的毫秒数
+var minutes=Math.floor(leave2/(60*1000))
+
+
+//计算相差秒数
+var leave3=leave2%(60*1000)      //计算分钟数后剩余的毫秒数
+var seconds=Math.round(leave3/1000)
+  document.getElementById("marguee").innerHTML = " 博客累计运行： "+days+"天 "+hours+"小时 "+minutes+" 分钟"+seconds+" 秒"
+}
+</script>
+
+<p><body onload="yizhidong()"><br></body></p>
+<div id="marguee" style="text-align:center;font-size:20px;color:red">博客累计时间加载中－－－</div>
+
+
 
       
     </div>
@@ -329,7 +389,7 @@ text-align: center;
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"about　| Coding-Shrimp　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"about　| CGSP’s blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -392,7 +452,7 @@ text-align: center;
         </div>
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259232833'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1259232833%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
 
-        
+    
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
