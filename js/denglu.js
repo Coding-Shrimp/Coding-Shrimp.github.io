@@ -24,10 +24,10 @@
     		var jiami = hex_sha1(pwdtext.value) + newd;
     		var mimayanzen = "ab43a7c9cb5b2380afc4ddf8b3e2583169b39a02"+newd;
     		 if (jiami == mimayanzen) {
-    		 	alert("成功了");
+    		 	alert("登录成功！");
     		 	localStorage.setItem("isDenglu","asdf");
-    		 	window.location.href = "http://cshrimp.cc/about/";
+    		 	window.location.href = "mainyemian.html";
     		 } else{
-    		 	alert("失败了");
+    		 	alert("密码错误！");
     		 }
     }
