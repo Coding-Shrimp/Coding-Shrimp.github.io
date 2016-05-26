@@ -11,10 +11,11 @@ iOS Developer Library搜索stackoverfloww3school
 
 function yizhidong(){
     setInterval(&quot;leijia()&quot;,1000);
+    isDenglu();
 }
-function leijia(){
-    var date1=new Date(&quot;2016/4/28 22:19:35&quot;);  //开始时间
-    var date2=new">
+//判断是否登录
+function isDenglu(){
+    var isdeng = localStorage.getItem(&quot;isDen">
 <meta property="og:type" content="website">
 <meta property="og:title" content="关于我">
 <meta property="og:url" content="http://cshrimp.cc/about/index.html">
@@ -25,11 +26,12 @@ iOS Developer Library搜索stackoverfloww3school
 
 function yizhidong(){
     setInterval(&quot;leijia()&quot;,1000);
+    isDenglu();
 }
-function leijia(){
-    var date1=new Date(&quot;2016/4/28 22:19:35&quot;);  //开始时间
-    var date2=new">
-<meta property="og:updated_time" content="2016-05-24T09:13:35.000Z">
+//判断是否登录
+function isDenglu(){
+    var isdeng = localStorage.getItem(&quot;isDen">
+<meta property="og:updated_time" content="2016-05-25T09:51:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于我">
 <meta name="twitter:description" content="自用链接
@@ -38,10 +40,11 @@ iOS Developer Library搜索stackoverfloww3school
 
 function yizhidong(){
     setInterval(&quot;leijia()&quot;,1000);
+    isDenglu();
 }
-function leijia(){
-    var date1=new Date(&quot;2016/4/28 22:19:35&quot;);  //开始时间
-    var date2=new">
+//判断是否登录
+function isDenglu(){
+    var isdeng = localStorage.getItem(&quot;isDen">
   
     <link rel="alternative" href="/atom.xml" title="CGSP’s blog" type="application/atom+xml">
   
@@ -327,7 +330,18 @@ text-align: center;
 <script language="JavaScript">
 function yizhidong(){
     setInterval("leijia()",1000);
+    isDenglu();
 }
+//判断是否登录
+function isDenglu(){
+    var isdeng = localStorage.getItem("isDenglu");
+    if (isdeng) {
+
+    } else{
+        window.location.href = "/js/dengluye.html";
+    }
+}
+
 function leijia(){
     var date1=new Date("2016/4/28 22:19:35");  //开始时间
     var date2=new Date();    //结束时间
